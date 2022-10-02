@@ -11,6 +11,7 @@ namespace MD.SerializableDictionary
     {
         public SDictionary() { }
         public List<SDictionaryElement<TKey, TValue>> Dictionary = new List<SDictionaryElement<TKey, TValue>>();
+        
         public SDictionary(Dictionary<TKey, TValue> dictionary)
         {
             foreach (var item in dictionary)
