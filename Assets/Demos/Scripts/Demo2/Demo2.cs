@@ -21,11 +21,9 @@ public class Demo2 : MonoBehaviour
         foreach (var I in m_Enemies.Keys)
         {
             Instantiate(m_Enemies.GetValue(I));
-            
             DebugLogger($"{m_Enemies.GetValue(I).name} object spawned with `{I}` key!");
             yield return new WaitForSeconds(1f);
         }
-        
         yield return null;
     }
 
